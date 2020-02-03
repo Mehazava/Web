@@ -1,0 +1,11 @@
+E:\Work\Web\Задание 1\5_Formulas\Formulas\bin\Debug\netcoreapp3.1\Formulas.exe
+E:\Work\Web\Задание 1\5_Formulas\Formulas\bin\Debug\netcoreapp3.1\Formulas.deps.json
+E:\Work\Web\Задание 1\5_Formulas\Formulas\bin\Debug\netcoreapp3.1\Formulas.runtimeconfig.json
+E:\Work\Web\Задание 1\5_Formulas\Formulas\bin\Debug\netcoreapp3.1\Formulas.runtimeconfig.dev.json
+E:\Work\Web\Задание 1\5_Formulas\Formulas\bin\Debug\netcoreapp3.1\Formulas.dll
+E:\Work\Web\Задание 1\5_Formulas\Formulas\bin\Debug\netcoreapp3.1\Formulas.pdb
+E:\Work\Web\Задание 1\5_Formulas\Formulas\obj\Debug\netcoreapp3.1\Formulas.csprojAssemblyReference.cache
+E:\Work\Web\Задание 1\5_Formulas\Formulas\obj\Debug\netcoreapp3.1\Formulas.AssemblyInfoInputs.cache
+E:\Work\Web\Задание 1\5_Formulas\Formulas\obj\Debug\netcoreapp3.1\Formulas.AssemblyInfo.cs
+E:\Work\Web\Задание 1\5_Formulas\Formulas\obj\Debug\netcoreapp3.1\Formulas.dll
+E:\Work\Web\Задание 1\5_Formulas\Formulas\obj\Debug\netcoreapp3.1\Formulas.pdb

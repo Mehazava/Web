@@ -1,0 +1,11 @@
+E:\Work\Web\Задание 1\6_TextForm\TextAnalyzer\bin\Debug\netcoreapp3.1\TextAnalyzer.exe
+E:\Work\Web\Задание 1\6_TextForm\TextAnalyzer\bin\Debug\netcoreapp3.1\TextAnalyzer.deps.json
+E:\Work\Web\Задание 1\6_TextForm\TextAnalyzer\bin\Debug\netcoreapp3.1\TextAnalyzer.runtimeconfig.json
+E:\Work\Web\Задание 1\6_TextForm\TextAnalyzer\bin\Debug\netcoreapp3.1\TextAnalyzer.runtimeconfig.dev.json
+E:\Work\Web\Задание 1\6_TextForm\TextAnalyzer\bin\Debug\netcoreapp3.1\TextAnalyzer.dll
+E:\Work\Web\Задание 1\6_TextForm\TextAnalyzer\bin\Debug\netcoreapp3.1\TextAnalyzer.pdb
+E:\Work\Web\Задание 1\6_TextForm\TextAnalyzer\obj\Debug\netcoreapp3.1\TextAnalyzer.csprojAssemblyReference.cache
+E:\Work\Web\Задание 1\6_TextForm\TextAnalyzer\obj\Debug\netcoreapp3.1\TextAnalyzer.AssemblyInfoInputs.cache
+E:\Work\Web\Задание 1\6_TextForm\TextAnalyzer\obj\Debug\netcoreapp3.1\TextAnalyzer.AssemblyInfo.cs
+E:\Work\Web\Задание 1\6_TextForm\TextAnalyzer\obj\Debug\netcoreapp3.1\TextAnalyzer.dll
+E:\Work\Web\Задание 1\6_TextForm\TextAnalyzer\obj\Debug\netcoreapp3.1\TextAnalyzer.pdb
