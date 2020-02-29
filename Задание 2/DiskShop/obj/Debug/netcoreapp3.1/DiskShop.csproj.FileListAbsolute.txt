@@ -1,0 +1,14 @@
+E:\Work\Web\Задание 2\DiskShop\bin\Debug\netcoreapp3.1\DiskShop.exe
+E:\Work\Web\Задание 2\DiskShop\bin\Debug\netcoreapp3.1\DiskShop.deps.json
+E:\Work\Web\Задание 2\DiskShop\bin\Debug\netcoreapp3.1\DiskShop.runtimeconfig.json
+E:\Work\Web\Задание 2\DiskShop\bin\Debug\netcoreapp3.1\DiskShop.runtimeconfig.dev.json
+E:\Work\Web\Задание 2\DiskShop\bin\Debug\netcoreapp3.1\DiskShop.dll
+E:\Work\Web\Задание 2\DiskShop\bin\Debug\netcoreapp3.1\DiskShop.pdb
+E:\Work\Web\Задание 2\DiskShop\obj\Debug\netcoreapp3.1\DiskShop.csprojAssemblyReference.cache
+E:\Work\Web\Задание 2\DiskShop\obj\Debug\netcoreapp3.1\DiskShop.AssemblyInfoInputs.cache
+E:\Work\Web\Задание 2\DiskShop\obj\Debug\netcoreapp3.1\DiskShop.AssemblyInfo.cs
+E:\Work\Web\Задание 2\DiskShop\obj\Debug\netcoreapp3.1\DiskShop.dll
+E:\Work\Web\Задание 2\DiskShop\obj\Debug\netcoreapp3.1\DiskShop.pdb
+E:\Work\Web\Задание 2\DiskShop\bin\Debug\netcoreapp3.1\DiskLib.dll
+E:\Work\Web\Задание 2\DiskShop\bin\Debug\netcoreapp3.1\DiskLib.pdb
+E:\Work\Web\Задание 2\DiskShop\obj\Debug\netcoreapp3.1\DiskShop.csproj.CopyComplete

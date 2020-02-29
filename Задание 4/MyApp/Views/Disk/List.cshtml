@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "List of disks";
+}
+
+<h3>Registered disks</h3>
+
+<table class="table">
+    <tr>
+        <th> Id </th>
+        <th> Disk name </th>
+        <th> Release date </th>
+        <td>
+            <form method="get">
+                <input type="text" name="search" />
+                <input type="submit" value="Search" />
+            </form>
+        </td>
+        <td>
+            <form asp-area="" asp-controller="Disk" asp-action="Create">
+                <input type="submit" value="Create new disk" />
+            </form>
+        </td>
+    </tr>
+    @using DiskLib;
+    @if (ViewBag.Empty == true)
+    {
+        <tr>
+            <td></td>
+            <td>No results</td>
+        </tr>
+    }
+    else
+    {
+        @foreach (DiskInfo disk in ViewBag.Stuff)
+        {
+            <tr>
+                <td>@disk.Id</td>
+                <td><a href="~/Disk/Details/@disk.Id">@disk.Name</a></td>
+                <td>@disk.ReleaseDate.ToString("d")</td>
+            </tr>
+        }
+    }
+</table>

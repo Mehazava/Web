@@ -1,0 +1,104 @@
+﻿@using Coolio.Models
+@model IndexViewModel
+@addTagHelper *, Coolio
+@{
+    ViewBag.Title = "All songs";
+}
+<style>
+    @@font-face {
+        font-family: 'FontAwesome';
+        src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'), 
+            url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff') format('woff'), 
+            url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal
+    }
+
+    .glyphicon {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+
+    .glyphicon-chevron-down:before {
+        content: "\f078";
+    }
+
+    .glyphicon-chevron-up:before {
+        content: "\f077";
+    }
+
+    .glyphicon-chevron-right:before {
+        content: "\f054";
+    }
+
+    .glyphicon-chevron-left:before {
+        content: "\f053";
+    }
+</style>
+
+<a asp-action="Create" asp-controller="Home" class="btn btn-primary" role="button">Add song</a>
+<hr />
+<form method="get">
+    <div class="form-inline form-group row">
+        <label class="control-label col-sm-1 text-md-right font-weight-bold">Name: </label>
+        <input name="name" value="@Model.FilterViewModel.SelectedName" class="form-control col-sm-2" />
+
+        <label class="control-label col-sm-1 text-md-right font-weight-bold">Producer: </label>
+        <select name="producer" asp-items="Model.FilterViewModel.Producers" class="form-control col-sm-2"></select>
+
+        <div class="col-sm-1"></div>
+        <input type="submit" value="Select" class="btn-secondary col-sm-1" />
+    </div>
+</form>
+<table class="table">
+    <tr>
+        <th>
+            <sort-header name="@Model.FilterViewModel.SelectedName"
+                         producer="@Model.FilterViewModel.SelectedProducer"
+                         action="Index"
+                         current="@Model.SortViewModel.Current"
+                         property="@Model.SortViewModel.NameSort">
+                Name
+            </sort-header>
+        </th>
+        <th>
+            <sort-header name="@Model.FilterViewModel.SelectedName"
+                         producer="@Model.FilterViewModel.SelectedProducer"
+                         action="Index"
+                         current="@Model.SortViewModel.Current"
+                         property="@Model.SortViewModel.RatingSort">
+                Rating
+            </sort-header>
+        </th>
+        <th>
+            <sort-header name="@Model.FilterViewModel.SelectedName"
+                         producer="@Model.FilterViewModel.SelectedProducer"
+                         action="Index"
+                         current="@Model.SortViewModel.Current"
+                         property="@Model.SortViewModel.ProducerSort">
+                Producer
+            </sort-header>
+        </th>
+    </tr>
+    @foreach (Song s in Model.Songs)
+    {
+        <tr>
+            <td>
+                <a asp-controller="Home" asp-action="Details" asp-route-id="@s.Id">@s.Name</a>
+            </td>
+            <td>@s.Rating</td>
+            <td>@s.Producer.Name</td>
+        </tr>
+    }
+</table>
+
+<page-link page-model="Model.PageViewModel"
+           page-action="Index"
+           page-url-name="@Model.FilterViewModel.SelectedName"
+           page-url-producer="@Model.FilterViewModel.SelectedProducer"
+           page-url-sortorder="@Model.SortViewModel.Current">
+</page-link>

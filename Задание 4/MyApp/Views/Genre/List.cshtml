@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "List of genres";
+}
+
+<h3>Registered genres</h3>
+
+<table class="table">
+    <tr>
+        <th> Id </th>
+        <th> Genre name </th>
+        <td>
+            <form method="get">
+                <input type="text" name="search" />
+                <input type="submit" value="Search" />
+            </form>
+        </td>
+        <td>
+            <form asp-area="" asp-controller="Genre" asp-action="Create">
+                <input type="submit" value="Create new genre" />
+            </form>
+        </td>
+    </tr>
+    @using DiskLib;
+    @if (ViewBag.Empty == true)
+    {
+        <tr>
+            <td></td>
+            <td>No results</td>
+        </tr>
+    }
+    else
+    {
+        @foreach (GenreInfo genre in ViewBag.Stuff)
+        {
+            <tr>
+                <td>@genre.Id</td>
+                <td><a href="~/Genre/Details/@genre.Id">@genre.Name</a></td>
+            </tr>
+        }
+    }
+</table>

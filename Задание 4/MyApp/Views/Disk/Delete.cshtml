@@ -1,0 +1,44 @@
+﻿@model MyApp.ViewModels.DiskModel;
+@{
+    ViewData["Title"] = "Delete disk";
+}
+
+<div>
+    <h3>Are you sure you want to delete this disk?</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Author</th>
+                <th scope="col">Publisher</th>
+                <th scope="col">ReleaseDate</th>
+                <th scope="col">Genres</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@ViewBag.Stuff.Id</td>
+                <td>@ViewBag.Stuff.Name</td>
+                <td>@ViewBag.Stuff.AuthorID</td>
+                <td>@ViewBag.Stuff.PublisherID</td>
+                <td>@ViewBag.Stuff.ReleaseDate.ToString("d")</td>
+                <td>@string.Join(' ', ViewBag.Stuff.GenreID)</td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <form method="post">
+                    <input type="submit" value="Delete" />
+                </form>
+            </td>
+            <td>
+                <form action="~/Disk/List">
+                    <input type="submit" value="Cancel" />
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>

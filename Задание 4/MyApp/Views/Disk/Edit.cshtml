@@ -1,0 +1,46 @@
+﻿@model MyApp.ViewModels.DiskModel;
+@{
+    ViewData["Title"] = "Edit disk";
+}
+
+<div>
+    <h3>Disk modification</h3>
+    <form asp-antiforgery="true" asp-action="Edit" asp-controller="Disk">
+        <div>
+            <div class="validation" asp-validation-summary="ModelOnly"></div>
+            <div>
+                <label asp-for="Name"></label><br />
+                <input type="text" asp-for="Name" />
+                <span asp-validation-for="Name"></span>
+            </div>
+            <div>
+                <label asp-for="ReleaseDate"></label><br />
+                <input type="text" asp-for="ReleaseDate" />
+                <span asp-validation-for="ReleaseDate"></span>
+            </div>
+            <div>
+                <label asp-for="AuthorID"></label><br />
+                <input type="text" asp-for="AuthorID" />
+                <span asp-validation-for="AuthorID"></span>
+            </div>
+            <div>
+                <label asp-for="PublisherID"></label><br />
+                <input type="text" asp-for="PublisherID" />
+                <span asp-validation-for="PublisherID"></span>
+            </div>
+            <div>
+                <label asp-for="GenreID"></label><br />
+                <input type="text" asp-for="GenreID" />
+                <span asp-validation-for="GenreID"></span>
+            </div>
+            <br />
+            <div>
+                <input type="submit" value="Save" />
+            </div>
+        </div>
+    </form>
+</div>
+@section scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

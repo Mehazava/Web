@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Author details";
+}
+
+<div>
+    <h3>Author details</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">FName</th>
+                <th scope="col">SName</th>
+                <th scope="col">Birth date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@ViewBag.Stuff.Id</td>
+                <td>@ViewBag.Stuff.FName</td>
+                <td>@ViewBag.Stuff.SName</td>
+                <td>@ViewBag.Stuff.BirthDate.ToString("d")</td>
+                <td><a href="~/Author/Edit/@ViewBag.Stuff.Id">Edit</a></td>
+                <td><a href="~/Author/Delete/@ViewBag.Stuff.Id">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

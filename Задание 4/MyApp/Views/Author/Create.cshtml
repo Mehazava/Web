@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Add new author";
+}
+
+<div>
+    <h3>Author creation</h3>
+    @model MyApp.ViewModels.AuthorModel
+    <form asp-antiforgery="true" asp-action="Create" asp-controller="Author">
+        <div>
+            <div class="validation" asp-validation-summary="ModelOnly"></div>
+            <div>
+                <label asp-for="FName"></label><br />
+                <input type="text" asp-for="FName" />
+                <span asp-validation-for="FName"></span>
+            </div>
+            <div>
+                <label asp-for="SName"></label><br />
+                <input type="text" asp-for="SName" />
+                <span asp-validation-for="SName"></span>
+            </div>
+            <div>
+                <label asp-for="BirthDate"></label><br />
+                <input type="text" asp-for="BirthDate" />
+                <span asp-validation-for="BirthDate"></span>
+            </div>
+            <br />
+            <div>
+                <input type="submit" value="Save" />
+            </div>
+        </div>
+    </form>
+</div>
+@section scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

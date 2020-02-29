@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "DiskShop/1.0.0": {
+        "dependencies": {
+          "DiskLib": "1.0.0"
+        },
+        "runtime": {
+          "DiskShop.dll": {}
+        }
+      },
+      "DiskLib/1.0.0": {
+        "runtime": {
+          "DiskLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DiskShop/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DiskLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

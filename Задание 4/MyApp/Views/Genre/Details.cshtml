@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Genre details";
+}
+
+<div>
+    <h3>Genre details</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@ViewBag.Genre.Id</td>
+                <td>@ViewBag.Genre.Name</td>
+                <td><a href="~/Genre/Edit/@ViewBag.Genre.Id">Edit</a></td>
+                <td><a href="~/Genre/Delete/@ViewBag.Genre.Id">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

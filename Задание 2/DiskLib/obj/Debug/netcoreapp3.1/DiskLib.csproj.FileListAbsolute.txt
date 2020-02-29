@@ -1,0 +1,8 @@
+E:\Work\Web\Задание 2\DiskLib\bin\Debug\netcoreapp3.1\DiskLib.deps.json
+E:\Work\Web\Задание 2\DiskLib\bin\Debug\netcoreapp3.1\DiskLib.dll
+E:\Work\Web\Задание 2\DiskLib\bin\Debug\netcoreapp3.1\DiskLib.pdb
+E:\Work\Web\Задание 2\DiskLib\obj\Debug\netcoreapp3.1\DiskLib.csprojAssemblyReference.cache
+E:\Work\Web\Задание 2\DiskLib\obj\Debug\netcoreapp3.1\DiskLib.AssemblyInfoInputs.cache
+E:\Work\Web\Задание 2\DiskLib\obj\Debug\netcoreapp3.1\DiskLib.AssemblyInfo.cs
+E:\Work\Web\Задание 2\DiskLib\obj\Debug\netcoreapp3.1\DiskLib.dll
+E:\Work\Web\Задание 2\DiskLib\obj\Debug\netcoreapp3.1\DiskLib.pdb

@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "List of authors";
+}
+
+<h3>Registered authors</h3>
+
+<table class="table">
+    <tr>
+        <th> Id </th>
+        <th> Author name </th>
+        <td>
+            <form method="get">
+                <input type="text" name="search" />
+                <input type="submit" value="Search" />
+            </form>
+        </td>
+        <td>
+            <form asp-area="" asp-controller="Author" asp-action="Create">
+                <input type="submit" value="Create new author" />
+            </form>
+        </td>
+    </tr>
+    @using DiskLib;
+    @if (ViewBag.Empty == true)
+    {
+        <tr>
+            <td></td>
+            <td>No results</td>
+        </tr>
+    }
+    else
+    {
+        @foreach (AuthorInfo author in ViewBag.Stuff)
+        {
+            <tr>
+                <td>@author.Id</td>
+                <td><a href="~/Author/Details/@author.Id">@author.FName @author.SName</a></td>
+            </tr>
+        }
+    }
+</table>

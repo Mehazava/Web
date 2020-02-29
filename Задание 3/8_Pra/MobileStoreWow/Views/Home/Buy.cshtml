@@ -1,0 +1,42 @@
+﻿@{ 
+    ViewData["Title"] = "Order registration";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order registration</title>
+</head>
+<body>
+    <div>
+        <h3>Order registrarion form</h3>
+        <form method="post" class="form-horizontal" role="form">
+            <input type="hidden" value="@ViewBag.PhoneId" name="PhoneId" />
+            <p>For order registration fill next fields:</p>
+            <div class="form-group">
+                <label for="User" class="col-md-2 control-label">Name:</label>
+                <div class="col-md-4">
+                    <input type="text" name="User" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Adress" class="col-md-2 control-label">Adress:</label>
+                <div class="col-md-4">
+                    <input type="text" name="Adress" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ContactPhone" class="col-md-2 control-label">Your phone number:</label>
+                <div class="col-md-4">
+                    <input type="text" name="ContactPhone" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" class="btn btn-default" value="Send" />
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

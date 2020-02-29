@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Disk details";
+}
+
+<div>
+    <h3>Disk details</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Author</th>
+                <th scope="col">Publisher</th>
+                <th scope="col">ReleaseDate</th>
+                <th scope="col">Genres</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@ViewBag.Stuff.Id</td>
+                <td>@ViewBag.Stuff.Name</td>
+                <td>@ViewBag.Stuff.AuthorID</td>
+                <td>@ViewBag.Stuff.PublisherID</td>
+                <td>@ViewBag.Stuff.ReleaseDate.ToString("d")</td>
+                <td>@string.Join(' ', ViewBag.Stuff.GenreID)</td>
+                <td><a href="~/Disk/Edit/@ViewBag.Stuff.Id">Edit</a></td>
+                <td><a href="~/Disk/Delete/@ViewBag.Stuff.Id">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
