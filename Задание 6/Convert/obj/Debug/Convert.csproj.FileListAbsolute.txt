@@ -1,0 +1,14 @@
+E:\Work\Web\Задание 6\Convert\bin\Debug\Convert.exe.config
+E:\Work\Web\Задание 6\Convert\bin\Debug\Convert.exe
+E:\Work\Web\Задание 6\Convert\bin\Debug\Convert.pdb
+E:\Work\Web\Задание 6\Convert\bin\Debug\EntityFramework.dll
+E:\Work\Web\Задание 6\Convert\bin\Debug\EntityFramework.SqlServer.dll
+E:\Work\Web\Задание 6\Convert\bin\Debug\EntityFramework.xml
+E:\Work\Web\Задание 6\Convert\bin\Debug\EntityFramework.SqlServer.xml
+E:\Work\Web\Задание 6\Convert\obj\Debug\Convert.csprojAssemblyReference.cache
+E:\Work\Web\Задание 6\Convert\obj\Debug\Convert.csproj.CopyComplete
+E:\Work\Web\Задание 6\Convert\obj\Debug\Convert.exe
+E:\Work\Web\Задание 6\Convert\obj\Debug\Convert.pdb
+E:\Work\Web\Задание 6\Convert\obj\Debug\Convert.Migrations.MusicDBbase.resources
+E:\Work\Web\Задание 6\Convert\obj\Debug\Convert.csproj.GenerateResource.cache
+E:\Work\Web\Задание 6\Convert\obj\Debug\Convert.Migrations.MusicDBv1.resources

@@ -1,0 +1,17 @@
+﻿@using Show.Models
+@model IEnumerable<Song>
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Rating</th>
+            <th>Producer</th>
+        </tr>
+        @foreach (Song s in Model)
+        {
+            <tr class="table">
+                <td>@s.Name</td>
+                <td>@s.Rating</td>
+                <td>@s.Producer.Name</td>
+            </tr>
+        }
+    </table>

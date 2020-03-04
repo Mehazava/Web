@@ -1,0 +1,11 @@
+E:\Work\Web\Задание 6\CreateDatabase\bin\Debug\CreateDatabase.exe.config
+E:\Work\Web\Задание 6\CreateDatabase\bin\Debug\CreateDatabase.exe
+E:\Work\Web\Задание 6\CreateDatabase\bin\Debug\CreateDatabase.pdb
+E:\Work\Web\Задание 6\CreateDatabase\bin\Debug\EntityFramework.dll
+E:\Work\Web\Задание 6\CreateDatabase\bin\Debug\EntityFramework.SqlServer.dll
+E:\Work\Web\Задание 6\CreateDatabase\bin\Debug\EntityFramework.xml
+E:\Work\Web\Задание 6\CreateDatabase\bin\Debug\EntityFramework.SqlServer.xml
+E:\Work\Web\Задание 6\CreateDatabase\obj\Debug\CreateDatabase.csprojAssemblyReference.cache
+E:\Work\Web\Задание 6\CreateDatabase\obj\Debug\CreateDatabase.csproj.CopyComplete
+E:\Work\Web\Задание 6\CreateDatabase\obj\Debug\CreateDatabase.exe
+E:\Work\Web\Задание 6\CreateDatabase\obj\Debug\CreateDatabase.pdb
