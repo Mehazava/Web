@@ -27,7 +27,6 @@ namespace Formulas
                         catch (Exception e)
                         {
                             Console.WriteLine($"{e.Message} Enter argument {i + 1} again.");
-                            succ = false;
                         }
                     } while (!succ);
                 }
@@ -39,7 +38,6 @@ namespace Formulas
                 catch (Exception e)
                 {
                     Console.WriteLine($"{e.Message} Try other arguments.");
-                    succ = false;
                 }
                 if (Double.IsNaN(d_result))
                 {
@@ -78,7 +76,6 @@ namespace Formulas
                 catch (Exception e)
                 {
                     Console.WriteLine($"{e.Message} Try other arguments.");
-                    succ = false;
                 }
                 if (Double.IsNaN(d_result))
                 {
@@ -105,7 +102,6 @@ namespace Formulas
                         catch (Exception e)
                         {
                             Console.WriteLine($"{e.Message} Enter argument {i + 1} again.");
-                            succ = false;
                         }
                     } while (!succ);
                 }
@@ -117,7 +113,6 @@ namespace Formulas
                 catch (Exception e)
                 {
                     Console.WriteLine($"{e.Message} Try other arguments.");
-                    succ = false;
                 }
                 if (Double.IsNaN(d_result))
                 {
@@ -144,7 +139,6 @@ namespace Formulas
                         catch (Exception e)
                         {
                             Console.WriteLine($"{e.Message} Enter argument {i + 1} again.");
-                            succ = false;
                         }
                     } while (!succ);
                 }
@@ -156,7 +150,6 @@ namespace Formulas
                 catch (Exception e)
                 {
                     Console.WriteLine($"{e.Message} Try other arguments.");
-                    succ = false;
                 }
                 if (Double.IsNaN(d_result))
                 {

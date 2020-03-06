@@ -19,7 +19,6 @@ namespace Generator
                 catch (Exception e)
                 {
                     Console.WriteLine($"{e.Message}, try again");
-                    succ = false;
                 }
                 finally
                 {
@@ -41,7 +40,6 @@ namespace Generator
                 catch (Exception e)
                 {
                     Console.WriteLine($"{e.Message}, try again");
-                    succ = false;
                 }
             } while (!succ);
             Console.WriteLine("Enter the maximum value:");
@@ -55,7 +53,6 @@ namespace Generator
                 catch (Exception e)
                 {
                     Console.WriteLine($"{e.Message} Try again");
-                    succ = false;
                 }
                 finally
                 {
@@ -67,6 +64,7 @@ namespace Generator
                 }
             } while (!succ);
             Random rng = new Random();
+            Console.WriteLine("Generated array:");
             for (int i = i_input[0]; i > 0; --i)
             {
                 Console.Write($"{rng.Next(i_input[1], i_input[2])} ");

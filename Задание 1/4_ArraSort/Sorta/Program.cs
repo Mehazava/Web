@@ -19,7 +19,6 @@ namespace Sorta
                 catch (Exception e)
                 {
                     Console.WriteLine($"{e.Message} Try again.");
-                    succ = false;
                 }
                 if (succ && (arr_size < 1))
                 {

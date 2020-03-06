@@ -7,7 +7,7 @@ namespace Opera
         static void Main(string[] args)
         {
             Console.WriteLine("Choose operator (+, -, *, /)");
-            string s_oper = "\0";
+            string s_oper = "";
             char c_oper = '\0';
             do
             {
@@ -19,11 +19,10 @@ namespace Opera
                 catch (Exception e)
                 {
                     Console.WriteLine($"{e.Message}");
-                    c_oper = ' ';
                 }
             } while (!((c_oper == '+') || (c_oper == '-') || (c_oper == '/') || (c_oper == '*')));
             double[] i_num = { 0, 0 };
-            string[] s_num = { "\0", "\0" };
+            string[] s_num = { "", "" };
             bool succ = false;
             for (int i = 0; i <= 1; ++i)
             {
