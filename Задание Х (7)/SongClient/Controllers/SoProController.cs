@@ -43,7 +43,7 @@ namespace SongClient.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Song>>> Get()
         {
-            return await db.Songs.ToListAsync();
+            return await db.Songs.Include(g => g.Producer).ToListAsync();
         }
 
         [HttpGet("/producers")]
