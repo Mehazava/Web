@@ -1,0 +1,28 @@
+﻿@model List<User>
+@{
+    ViewBag.Title = "User list";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-light table-bordered table-hover">
+    <tr>
+        <th>
+            Email
+        </th>
+        <th>
+            Password
+        </th>
+        <th>
+            Role
+        </th>
+    </tr>
+    @foreach (User u in Model)
+    {
+        <tr>
+            <td>@u.Email</td>
+            <td>@u.Password</td>
+            <td>@u.Role.Name</td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,122 @@
+﻿@using CarShop.Models
+
+@model IndexViewModel
+@addTagHelper *, CarShop
+@{
+    ViewBag.Title = "All cars";
+}
+<style>
+    @@font-face {
+        font-family: 'FontAwesome';
+        src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff') format('woff'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal
+    }
+
+    .glyphicon {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale
+    }
+
+    .glyphicon-chevron-down:before {
+        content: "\f078";
+    }
+
+    .glyphicon-chevron-up:before {
+        content: "\f077";
+    }
+
+    .glyphicon-chevron-right:before {
+        content: "\f054";
+    }
+
+    .glyphicon-chevron-left:before {
+        content: "\f053";
+    }
+</style>
+@if (ViewBag.CL == 3)
+{
+    <a asp-action="Create" asp-controller="Home" class="btn btn-primary" role="button">Add car</a>
+}
+<a asp-action="Logout" asp-controller="Account" class="btn btn-primary ml-2" role="button">Logout</a>
+@if (ViewBag.CL == 3)
+{
+    <a asp-action="Register" asp-controller="Account" class="btn btn-primary float-right ml-2" role="button">Register a new user</a>
+    <a asp-action="List" asp-controller="Account" class="btn btn-primary float-right ml-2" role="button">User list</a>
+}
+
+<hr />
+<form method="get">
+    <div class="form-inline form-group row">
+        <label class="control-label col-sm-1 text-md-right font-weight-bold">Name: </label>
+        <input name="name" value="@Model.FilterViewModel.SelectedName" class="form-control col-sm-2" />
+
+        <label class="control-label col-sm-1 text-md-right font-weight-bold">Brand: </label>
+        <select name="brand" asp-items="Model.FilterViewModel.Brands" class="form-control col-sm-2"></select>
+
+        <div class="col-sm-1"></div>
+        <input type="submit" value="Select filter" class="btn-secondary col-2" />
+    </div>
+</form>
+<table class="table table-light table-bordered table-hover">
+    <tr>
+        <th>
+            <sort-header name="@Model.FilterViewModel.SelectedName"
+                         producer="@Model.FilterViewModel.SelectedBrand"
+                         action="Index"
+                         current="@Model.SortViewModel.Current"
+                         property="@Model.SortViewModel.NameSort">
+                Name
+            </sort-header>
+        </th>
+        <th>
+            <sort-header name="@Model.FilterViewModel.SelectedName"
+                         producer="@Model.FilterViewModel.SelectedBrand"
+                         action="Index"
+                         current="@Model.SortViewModel.Current"
+                         property="@Model.SortViewModel.PowerSort">
+                Power
+            </sort-header>
+        </th>
+        <th>
+            <sort-header name="@Model.FilterViewModel.SelectedName"
+                         producer="@Model.FilterViewModel.SelectedBrand"
+                         action="Index"
+                         current="@Model.SortViewModel.Current"
+                         property="@Model.SortViewModel.PriceSort">
+                Price
+            </sort-header>
+        </th>
+        <th>
+            <sort-header name="@Model.FilterViewModel.SelectedName"
+                         producer="@Model.FilterViewModel.SelectedBrand"
+                         action="Index"
+                         current="@Model.SortViewModel.Current"
+                         property="@Model.SortViewModel.BrandSort">
+                Brand
+            </sort-header>
+        </th>
+    </tr>
+    @foreach (Car s in Model.Cars)
+    {
+        <tr>
+            <td>
+                <a asp-controller="Home" asp-action="Details" asp-route-id="@s.Id">@s.Name</a>
+            </td>
+            <td>@s.Power</td>
+            <td>@s.Price</td>
+            <td>@s.Brand.Name</td>
+        </tr>
+    }
+</table>
+
+<page-link page-model="Model.PageViewModel"
+           page-action="Index"
+           page-url-name="@Model.FilterViewModel.SelectedName"
+           page-url-producer="@Model.FilterViewModel.SelectedBrand"
+           page-url-sortorder="@Model.SortViewModel.Current">
+</page-link>

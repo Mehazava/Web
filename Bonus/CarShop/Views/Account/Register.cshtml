@@ -1,0 +1,47 @@
+﻿@model CarShop.ViewModels.RegisterModel
+@{
+    ViewBag.Title = "Registration";
+}
+
+
+<div class="row">
+    <div class="col-md-4 offset-md-4 border border-primary rounded bg-info">
+        <h2 class="text-center">Registration</h2>
+        <form asp-action="Register" asp-controller="Account" asp-anti-forgery="true">
+            <div class="validation" asp-validation-summary="ModelOnly" />
+            <div>
+                <div>
+                    <label asp-for="Email">Enter Email</label><br />
+                    <input type="text" asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" />
+                </div>
+                <div>
+                    <label asp-for="Password">Enter the password</label><br />
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" />
+                </div>
+                <div>
+                    <label asp-for="ConfirmPassword">Confirm the password</label><br />
+                    <input asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" />
+                </div>
+                <div>
+                    <label asp-for="Role">Role: </label><br />
+                    <div>
+                        <select asp-for="Role">
+                            <option value="">Choose role</option>
+                            <option value="1">Admin</option>
+                            <option value="2">Moderator</option>
+                            <option value="3">Consultant</option>
+                        </select>
+                        <span asp-validation-for="Role"></span>
+                    </div>
+                </div><br />
+                <div class="text-center">
+                    <input type="submit" value="Register" class="btn btn-primary" />
+                </div>
+                <br />
+            </div>
+        </form>
+    </div>
+</div>

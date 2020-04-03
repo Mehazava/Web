@@ -1,0 +1,31 @@
+﻿@model CarShop.Models.DetailsViewModel
+@{
+    ViewBag.Title = Model.Car.Name;
+}
+<h2>Car - @Model.Car.Name</h2>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Power</th>
+        <th>Price</th>
+        <th>Brand</th>
+        <th>Year</th>
+    </tr>
+    <tr>
+        <td>@Model.Car.Id</td>
+        <td>@Model.Car.Power</td>
+        <td>@Model.Car.Price</td>
+        <td>@Model.Select.Brands.FirstOrDefault(x => x.Selected).Text</td>
+        <td>@Model.Car.Year</td>
+    </tr>
+    <tr>
+        @if (ViewBag.CL >= 2)
+        {
+            <td><a asp-controller="Home" asp-action="Edit" asp-route-id="@Model.Car.Id" class="btn btn-primary" role="button">Edit</a></td>
+        }
+        @if (ViewBag.CL == 3)
+        {
+            <td><a asp-controller="Home" asp-action="Delete" asp-route-id="@Model.Car.Id" class="btn btn-primary" role="button">Delete</a></td>
+        }
+    </tr>
+</table>
