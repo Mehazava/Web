@@ -9,4 +9,7 @@ namespace Migrations
             Console.WriteLine("Hello World!");
         }
     }
+    //	
+    //Update-Database InitialDb
+    //Update-Database 1-AddRating
 }
